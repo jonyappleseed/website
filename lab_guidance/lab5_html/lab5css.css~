@@ -1,0 +1,31 @@
+ /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-LinkedIn {
+  background: #ffffff;
+  color: #007bb5;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #ffffff;
+  color: #55ACEE;
+} 
+
+/* Society6 */
+.fa-society6 {
+  background: #ffffff;
+  color: #00b489;
+
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-society6"></a>

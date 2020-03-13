@@ -1,0 +1,56 @@
+    body {
+	background: url("https://filedn.com/l20ianlVwdqbooPcoPGHijk/IMG_1627.JPG" no-repeat center center fixed;
+		    -webkit-background-size: cover;
+		    -moz-boackground-size: cover;
+		    -o-background-size: cover;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		   }
+    div.transbox {
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+
+    div.transbox p {
+	margin: 5%;
+	font-weight: bold;
+	color: #000000;
+    }
+
+    div.center {
+	text-align: center
+    }
+    
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-linkedIn {
+  background: #ffffff;
+  color: #2867b2;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #ffffff;
+  color: #1da1f2;
+} 
+
+/* Society6 */
+.fa-society6 {
+  background: #ffffff;
+  color: #14171A;
+
+
