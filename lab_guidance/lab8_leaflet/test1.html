@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+</head>
+<body>
+<div id="map" style="width: 705px; height: 375px"></div>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map',{ center: [39.743218, -105.004568], zoom: 14});
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OpenStreetMap' }).addTo(map);
+  var myDataPoint = L.marker([39.743119, -105.002959]).addTo(map);
+  var myArea = L.polygon([[39.740652, -105.010233], [39.743218, -105.011864], [39.748473, -105.002487], [39.740283, -104.999037]], {color: 'blue', weight: 4}).addTo(map);
+  myDataPoint.bindPopup("<h3>Auraria Library</h3><p>Denver, CO<br>Information</p>);
+  myArea.bindPopup("Auraria Library");
+  var popup = L.popup();
+  function onMapClick(e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("You clicked the map at " + e.latlng.toString())
+      .openon(map);
+  }
+  map.on('click', onMapClick);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<style>
+	body {
+	font-family: Times New Roman, Times;
+	
+	background: url('https://filedn.com/l20ianlVwdqbooPcoPGHijk/IMG_1627.JPG') no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;
+	}
+	
+	div.transbox {
+		margin: 30px;
+		background-color: #ADD8E6; /* light blue */
+		border: 1px solid black;
+		opacity: 0.6;
+		filter: alpha(opacity=60); /* For IE8 and earlier */
+	}
+	
+	div.transbox p {
+		margin: 15%;
+		font-weight: bold;
+		color: #000000;
+	}
+	
+	div.center {
+		text-align: center
+	}
+	
+	.poem {text-align: center; font-style: italic}
+	.title {text-align: center; font-weight: bold}
+
+</style>
