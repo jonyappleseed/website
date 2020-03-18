@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://kit.fontawesome.com/1bf45a443c.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
 </head>
 
 <body>
 
 <!-- side navigation -->
-<div class="sidenav">
-  <a class="active" href="./home.html">home</a>
-  <a href="./creative.html">creative</a>
-  <a href="./geology.html">geology</a>
-  <a href="./notes.html">notes</a>
-  <a href="./urban_mapping.html">urban mapping</a>
-</div>
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $"#nav-placeholder").load("navigation.html");
+});
+</script>
 
 <!-- page content -->
 <div class="center content">
