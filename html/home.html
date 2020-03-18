@@ -14,11 +14,11 @@
 
 <body>
 
-<!-- side navigation -->
+<!-- templates -->
 <div id="nav-placeholder"></div>
 <script>
-$(function(){
-  $"#nav-placeholder").load("navigation.html");
+$.get("nav.html", function(data){
+  $("#nav-placeholder").replaceWith(data);
 });
 </script>
 
