@@ -3,80 +3,86 @@
 	font-family: Ebrima, serif;
 	}
 
-  .header {
-		overflow: hidden;
-		background-color: #f1f1f1; /* light grey */
-		padding: 20px 10px;
-	}
-
-/* header link styling */
-	.header {
-		float: left;
-		color: black;
-		text-align: center;
-		padding: 12px;
-		text-decoration: none;
-		font-size: 18px;
-		line-height: 25px;
-		border-radius: 4px;
-	}
-
 /* side navigation menu */
   .sidenav {
-		height: 100%; /* Full-height; remove if you want 'auto' height */
-		width: 160px;
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		background-color: #f1f1f1;
 		position: fixed;
-		z-index: 1; /* Stay on top */
-		top: 0; /* Stay at the top */
-		left: 0;
-		background-color: #111; /* Black */
-		overflow-x: hidden; /* Disable horizontal scroll */
-		padding-top: 20px;
+		height: 100%;
+		overflow: auto;
 	}
 
   /* side navigation menu links */
 	.sidenav a {
-		padding: 6px 8px 6px 16px;
+		padding: 20px 16px;
 		text-decoration: none;
-		font-size: 25px;
-		color: #818181;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+		color: black;
 		display: block;
 	}
 
+	.sidenav a:active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
   /* when moused over, the navigation links will change their color */
-	.sidenav a:hover {
-		color: f1f1f1;
+	.sidenav a:hover:not(.active) {
+		background-color: #555;
+		color: white;
 	}
 
   /* page content */
-	.main {
-		margin-left: 160px; /* same as sidebar width */
-		padding: 0px 10px;
-	}
-
-	.me {
-		font-size: 4em;
-		letter-spacing: 0.1em;
-	}
-
-	.socialMedia {
-		padding-right: 8px;
-		color: #F5F5F5;
-	}
-
-  /* on screens where height < 450px, change the style of the sidebar (less padding and a smaller font size) */
-	@media screen and (max-height: 450px) {
-		.sidenav {padding-top: 15px;}
-		.sidenav a {font-size: 18px;}
+	div.content {
+		margin-left: 200px; /* same as sidebar width */
+		padding: 1px 16px;
+		height: 275px;
 	}
 
 	div.center {
 		text-align: center
 	}
 
-	.poem {text-align: center; font-style: italic}
+	@media screen and (max-width:700px) {
+		.sidenav {
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+		.sidenav a {float: left;}
+		div.content {margin-left: 0;}
+	}
 
-	.poem_title {text-align: center; font-weight: bold}
+	@@media screen and (max-width: 400px) {
+		.sidebar a {
+			text-align: center;
+			float: none;
+		}
+	}
+
+	.me {
+		font-size: 1.5em;
+		letter-spacing: 0.1em;
+	}
+
+	.socialMedia {
+		padding-right: 8px;
+		color: #171717;
+	}
+
+	.poem {
+		text-align: center;
+		font-style: italic
+	}
+
+	.poem_title {
+		text-align: center;
+		font-weight: bold
+	}
 
 html
 </style>
