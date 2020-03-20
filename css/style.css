@@ -1,7 +1,7 @@
 <style>
 	body {
 	font-family: Ebrima, serif;
-	background: url('https://filedn.com/l20ianlVwdqbooPcoPGHijk/IMG_1627.JPG') no-repeat center center fixed;
+	background: url('./design/body-background.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -14,7 +14,7 @@
   .sidenav {
 		margin: 0;
 		padding: 0;
-		width: 250px;
+		width: 200px;
 		background-color: #111;
 		position: fixed;
 		height: 100%;
@@ -29,7 +29,6 @@
 		display: block;
 		border: none;
 		background: none;
-		text-align: left;
 		font-weight: bold;
 		cursor: pointer;
 		outline: none;
