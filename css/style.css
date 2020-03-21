@@ -14,22 +14,23 @@
   .sidenav {
 		margin: 0;
 		padding: 0;
-		width: 200px;
+		width: 190px;
 		background-color: #111;
 		position: fixed;
 		height: 100%;
 		overflow: auto;
 	}
 
-  /* side navigation menu links */
+  /* side nav links */
 	.sidenav a, .dropdown-btn {
 		padding: 6px 8px 6px 10px;
 		text-decoration: none;
 		color: #818181;
-		display: block;
+		display: inline-block;
 		border: none;
 		background: none;
 		font-weight: bold;
+		font-size: 1.25em;
 		cursor: pointer;
 		outline: none;
 	}
@@ -55,17 +56,6 @@
 		padding-left: 6px;
 	}
 
-  /* page content */
-	.content {
-		margin-left: 200px; /* same as sidebar width */
-		padding: 1px 16px;
-		height: 275px;
-	}
-
-	div.center {
-		text-align: center
-	}
-
 	@media screen and (max-width:700px) {
 		.sidenav {
 			width: 100%;
@@ -83,8 +73,16 @@
 		}
 	}
 
+	.content {
+		margin-left: 190px; /* same as sidebar width */
+	}
+
+	div.center {
+		text-align: center
+	}
+
 	.me {
-		font-size: 1.5em;
+		font-size: 1.25em;
 		letter-spacing: 0.1em;
 	}
 
