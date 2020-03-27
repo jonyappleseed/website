@@ -1,10 +1,4 @@
-2020-03-20 Rant
-I've been trying to make FileZilla open files, specifically the htaccess file, in Atom externally. Currently, the application path I copied to FileZilla is "usr/bin/atom"; the file type association is presumably formatted correctly since several sites/comment threads had it formatted the same way (i.e. .txt /usr/bin/atom -open). For now, FileZilla is just downloading the htaccess file to my Dropbox; a little extra work in opening but I'll spend some time figuring it out over the summer.
-
-I am going through this turmoil because I am going to use SSI (Server Side Includes) to attach my header file to all of my pages. I could very well use PHP but since I have never used it, I would rather not spend the extra time debugging; that's something I will deal with over the summer because for now I need to concentrate on getting the Cesium Tiles up.
-
-
-2020-03-26 Issues
+2020-03-26
 I have been able to include the navigation and header files in the index file using PHP but have run into two separate but possibly related issues.
 
 Issue 20200326-1:
