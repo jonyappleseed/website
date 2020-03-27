@@ -1,0 +1,39 @@
+// A colors
+// A-1 logo
+#0F677F
+#07625B Peacock Green
+#073C62 " Blue (complement to above)
+#612C07 Brown, complementary to Peacock Green & Blue
+#F0EAD6 Eggshell
+#44652C
+#2774bf
+
+// B layout-clips
+// B-1 general page
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>m-huskey</title>
+    <link rel="stylesheet" href="design/style.css">
+    <?php include '/design/common_tags.php' ?>
+  </head>
+
+  <body>
+    <?php include '/design/nav.php' ?>
+    <?php include '/design/header.php' ?>
+
+    /* page content */
+
+  </body>
+
+</html>
+
+// B-2 nav-links-old_20200326
+position: fixed;
+left: 0; top: 135px; bottom: 0; /* height of top */
+width: 175px; /* width of links */
+background-color: black;
+overflow: auto;
