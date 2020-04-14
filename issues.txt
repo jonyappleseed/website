@@ -1,0 +1,21 @@
+2020-03-26
+I have been able to include the navigation and header files in the index file using PHP but have run into two separate but possibly related issues.
+
+Issue 20200326-1:
+The JavaScript files connected to the navigation and header files (one per each) can no longer be accessed. When I initially tested the site, I used jQuery to connect the nav/header files to the index file but I have had no success yet in finding out where the disconnect is between the header.php & header.js (& same for nav) while using php to insert the respective php files into the index (header.php + nav.php --> index.php).
+
+Expression:
+The header will not stick to the top of the page.
+The sidenav link carets will not show the pages in the menu for the user to click.
+
+Possible solutions:
+Review e-article from Smashing Magazine; I may have missed some symbols ($, parens)
+Return to using jQuery
+
+Issue 20200326-2:
+Background image will not show.
+
+Possible solutions
+Work through Issue 20200326-1 first and see if this resolves itself
+Check path to image
+Profit

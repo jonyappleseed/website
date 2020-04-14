@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
- <title>hall ranch</title>
- <script src="//code.jquery.com/jquery.min.js"></script>
- <script>
- $(function(){
-   $("#header").load("./design/header.html");
- });
- </script>
+<title>hall-ranch</title>
+<script
+  <meta charset="utf-8">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.68/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+$(function(){
+  $("#header").load("design/header.html");
+  $("#footer").load("footer.html");
+});
+</script>
 </head>
-
 <body>
 <div id="header"></div>
-<!-- page content -->
-<div class="center content">
-  <h1><strong>3D Visualization of the Aggregate Quarry at Hall Ranch Open Space in Boulder County</strong></h1>
-  <p>Content coming soon!</p>
+<div id="">
+  <div id="cesiumContainer" style="width: 700px; height:400px"></div>
+    <script>
+      Cesium.Ion.defaultAccessToken = 'your_access_token';
+      var viewer = new Cesium.Viewer('cesiumContainer', {
+        terrainProvider: Cesium.createWorldTerrain()
+      });
+    </script>
 </div>
+<div id="footer"></div>
 </body>
 </html>
