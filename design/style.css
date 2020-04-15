@@ -1,37 +1,68 @@
 <style>
 	body {
 	font-family: Times, serif;
-	background-color: blue;
+/*	background-color: blue; */
+	background: url('img/body-background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 	}
 
-/* sidenav */
-  .sidenav {
-		height: 100%; /* full height */
-		width: 175px; /* width of links */
-		position: fixed; /* stay in place while scrolling */
-		top: 0; /* stay stuck at top */
-		left: 0;
+	.logo {
+		float: left;
+	}
+
+/* top nav bar */
+	#navigation-container {
+		width: 100%;
+		margin: 0 auto;
+		height: 70px; /* same height as logo */
+	}
+
+	.navigation-bar {
 		background-color: black;
-		overflow-x: hidden; /* disable horizontal scroll */
-		padding-top: 135px; /* account for logo */
+		height: 70px; /* same height as logo */
+		width: 100%;
+		text-align:center;
 	}
 
-  /* nav links */
-	.sidenav a, .dropdown-btn {
-		padding: 20px 8px 6px 7px;
-		text-decoration: none;
-		color: #f0ead6;
+	.navigation-bar img{
+		float: left;
+	}
+
+	.navigation-bar ul {
+		padding: 0px;
+		margin: 0px;
+		text-align: center;
 		display: inline-block;
-		border: none;
-		background: none;
-		font-weight: bold;
-		font-size: 1.25em;
-		cursor: pointer;
-		outline: none;
+		vertical-align: top;
 	}
 
-	.sidenav a:hover, .dropdown-btn:hover {
-		color: #f1f1f1;
+	.navigation-bar li {
+		list-style-type: none;
+		padding: 0px;
+		height: 24px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		display: inline;
+	}
+
+	.navigation-bar li a, .dropbtn {
+		color: #f0ead6;
+		font-size: 16px;
+		font-family: serif;
+		text-decoration: none;
+		line-height: 70px;
+		padding: 5px 15px;
+		opacity: 0.7
+		cursor: pointer;
+	}
+
+	.navigation-bar li a:hover, .dropbtn:hover {
+		color:#f1f1f1;
 	}
 
 	.active {
@@ -42,13 +73,10 @@
 	.dropdown-container {
 		display: none;
 		background-color: #262626;
-		padding-left: 8px;
 	}
 
-	.fa-caret-down {
+	#menu {
 		float: right;
-		padding-right: 6px;
-		padding-left: 6px;
 	}
 
 /* page behavior */
@@ -58,16 +86,17 @@
 			height: auto;
 			position: relative;
 		}
-		.sidenav a {float: left;}
 		div.content {margin-left: 0;}
 	}
 
+/*
 	@@media screen and (max-width: 400px) {
 		.sidebar a {
 			text-align: center;
 			float: none;
 		}
 	}
+*/
 
 /* content */
 	.content {
@@ -81,7 +110,7 @@
 		font-style: italic
 	}
 
-	.poem_title {
+	.poem-title {
 		text-align: center;
 		font-weight: bold
 	}
