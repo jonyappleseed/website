@@ -4,44 +4,6 @@
 	background-color: blue;
 	}
 
-/* header */
-	.header {
-		position: absolute;
-		left: 0; right: 0; top: 0;
-		height: 145px; /* height of logo */
-		background: black;
-		text-font: Ubuntu Condensed;
-		z-index: 1;
-	}
-
-	.sticky {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-	.logo {
-		z-index: 1;
-	}
-
-	.socialMedia {
-		padding-right: 8px;
-		color: #f0ead6;
-	}
-
-	header #profiles {
-		float: right;
-		display: inline-block;
-		margin: 42px 10px 20px 0px;
-		line-height: 1.25em;
-	}
-
-/*
-	header #tagline em {
-		letter-spacing: 1px;
-	}
-*/
-
 /* sidenav */
   .sidenav {
 		height: 100%; /* full height */
