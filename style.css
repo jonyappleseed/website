@@ -1,0 +1,175 @@
+<style>
+	body {
+	font-family: Times, serif;
+	background: url("body-background.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+
+	/* content */
+
+	div {
+		width: 1800px;
+		margin: auto;
+	}
+
+	.poem {
+		text-align: center;
+		font-style: italic
+	}
+
+	.poem-title {
+		text-align: center;
+		font-weight: bold
+	}
+
+/* top nav bar */
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navwrapper {
+    background: #8f7676;
+    min-height: 40px;
+}
+.Responavigation {
+	  max-width: 1000px;
+	  margin: 0 auto;
+	  padding: 0px 20px;
+	  position: relative;
+}
+.Responavigation nav a {
+    color: #fff;
+    display: block;
+}
+
+.Responavigation nav > ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.Responavigation nav > ul > li {
+    display: inline-block;
+    list-style: outside none none;
+}
+.Responavigation nav > ul > li > a {
+	  cursor: pointer;
+	  display: block;
+  	outline: none;
+  	width: 100%;
+	  text-decoration: none;
+	  padding: 20px;
+}
+
+.Responavigation nav > ul li ul {
+		background:#8f7676;
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 200px;
+		z-index: 2000;
+		margin:0;
+		padding: 0;
+}
+.Responavigation nav > ul li ul li {
+	  width: 100%;
+	  list-style:none;
+  	text-align: left;
+}
+.Responavigation nav > ul li ul li > a {
+	  text-decoration: none;
+	   padding: 10px 20px;
+
+}
+.Responavigation nav ul li:hover {
+	  cursor: pointer;
+	  position: relative;
+}
+.Responavigation nav ul li:hover > ul {
+  	display: block;
+}
+.Responavigation nav ul li:hover > a {
+
+}
+
+[type="checkbox"], label {
+	  display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.Responavigation nav ul {
+		display: none;
+	}
+
+	.Responavigation label {
+		display: block;
+		background: #da6b6b;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+		top: 0px;
+	}
+
+	.Responavigation label:after{
+		content:'';
+		display: block;
+		width: 30px;
+		height: 5px;
+		background: #8f7676;
+		margin: 7px 5px;
+		box-shadow: 0px 10px 0px #8f7676, 0px 20px 0px #8f7676
+	}
+
+	.Responavigation [type="checkbox"]:checked ~ ul {
+		display: block;
+		z-index: 9999;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top:40px;
+	}
+
+	.Responavigation nav a {
+		color: #fff;
+	}
+
+	.Responavigation nav ul li {
+		display: block;
+		float: none;
+		width: 100%;
+		text-align: left;
+		background: #8f7676;
+		text-indent: 20px;
+	}
+
+	.Responavigation nav > ul > li {
+		margin-left: 0px;
+	}
+
+	.Responavigation nav > ul li ul li {
+		display: block;
+		float: none;
+	}
+
+	.Responavigation nav > ul li ul {
+		display: block;
+		position: relative;
+		width: 100%;
+		z-index: 9999;
+		float: none;
+	}
+}
+
+</style>
